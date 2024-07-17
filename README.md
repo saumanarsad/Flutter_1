@@ -1,6 +1,9 @@
-# mobile_app_1
+# My Mobile App
 
 A new Flutter project.
+
+# Pet Project
+I will learn complete flutter through this repo. 
 
 ## Getting Started
 
