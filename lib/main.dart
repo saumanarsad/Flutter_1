@@ -37,15 +37,14 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: Text('Hello BGhai'),
         ),
-        body: Center(
-          child: Container(
-            width: 100,
-            height: 100,
-            color: Colors.blueAccent,
-            child: const Center(
-              child: Text('Hello'),
-            ),
-          ),
+        body: const Text(
+          "hello",
+          style: TextStyle(
+              fontSize: 25, 
+              color: Colors.blue, 
+              fontWeight: FontWeight.bold,
+              backgroundColor: Colors.orange
+              ),
         ));
   }
 }
