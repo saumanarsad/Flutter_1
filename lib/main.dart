@@ -37,14 +37,11 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: const Text('My flutter'),
         ),
-        body: OutlinedButton(
-          child: const Text('Hello'),
-          onPressed: () {
-            print('hello');
-          },
-          onLongPress: () {
-            print("long press");
-          },
+        body: Center(
+          child: Container(
+              width: 100,
+              height: 100,
+              child: Image.asset('assets/images/pic2.jpg')),
         ));
   }
 }
