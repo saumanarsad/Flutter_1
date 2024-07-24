@@ -33,15 +33,24 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-          title: const Text('My flutter'),
+      appBar: AppBar(
+        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        title: const Text('My flutter'),
+      ),
+      body: Container(
+        
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            const Text('hello'),
+            ElevatedButton(onPressed: () {}, child: const Text('clicked')),
+            const Text('hello'),
+            const Text('hello'),
+            const Text('hello'),
+            const Text('hello'),
+          ],
         ),
-        body: Center(
-          child: Container(
-              width: 100,
-              height: 100,
-              child: Image.asset('assets/images/pic2.jpg')),
-        ));
+      ),
+    );
   }
 }
