@@ -38,16 +38,22 @@ class _MyHomePageState extends State<MyHomePage> {
         title: const Text('My flutter'),
       ),
       body: Container(
-        
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        height: 300,
+        width: 3000,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            const Text('hello'),
-            ElevatedButton(onPressed: () {}, child: const Text('clicked')),
-            const Text('hello'),
-            const Text('hello'),
-            const Text('hello'),
-            const Text('hello'),
+            Row(
+              children: [
+                const Text('hello'),
+                ElevatedButton(onPressed: () {}, child: const Text('clicked')),
+                const Text('hello'),
+                const Text('hello'),
+                const Text('hello'),
+                const Text('hello'),
+              ],
+            )
           ],
         ),
       ),
