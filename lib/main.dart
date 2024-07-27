@@ -37,15 +37,20 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: const Text('My flutter'),
         ),
-        body: Container(
-          width: 300,
-          height: 300,
+        body: Center(
           child: InkWell(
-            child: Image.asset('assets/images/pic1.jpg'),
+            child: Container(
+              width: 200,
+              height: 200,
+              color: Colors.amber,
+              child: const Text(
+                'Hello',
+                style: TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
+              ),
+            ),
             onTap: () {
               print('hello');
             },
-            onLongPress: () {},
           ),
         ));
   }
