@@ -37,20 +37,34 @@ class _MyHomePageState extends State<MyHomePage> {
           backgroundColor: Theme.of(context).colorScheme.inversePrimary,
           title: const Text('My flutter'),
         ),
-        body: Center(
-          child: InkWell(
-            child: Container(
-              width: 200,
-              height: 200,
-              color: Colors.amber,
-              child: const Text(
-                'Hello',
-                style: TextStyle(fontSize: 21, fontWeight: FontWeight.bold),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                margin: const EdgeInsets.only(bottom: 10),
+                width: 200,
+                height: 200,
+                color: Colors.amber,
               ),
-            ),
-            onTap: () {
-              print('hello');
-            },
+              Container(
+                margin: const EdgeInsets.only(bottom: 10),
+                width: 200,
+                height: 200,
+                color: Colors.amber,
+              ),
+              Container(
+                margin: const EdgeInsets.only(bottom: 10),
+                width: 200,
+                height: 200,
+                color: Colors.amber,
+              ),
+              Container(
+                margin: const EdgeInsets.only(bottom: 10),
+                width: 200,
+                height: 200,
+                color: Colors.amber,
+              )
+            ],
           ),
         ));
   }
