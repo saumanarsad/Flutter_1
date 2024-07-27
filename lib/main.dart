@@ -38,7 +38,8 @@ class _MyHomePageState extends State<MyHomePage> {
           title: const Text('My flutter'),
         ),
         body: SingleChildScrollView(
-          child: Column(
+          scrollDirection: Axis.horizontal,
+          child: Row(
             children: [
               Container(
                 margin: const EdgeInsets.only(bottom: 10),
@@ -56,14 +57,32 @@ class _MyHomePageState extends State<MyHomePage> {
                 margin: const EdgeInsets.only(bottom: 10),
                 width: 200,
                 height: 200,
-                color: Colors.amber,
+                color: Colors.blue,
               ),
               Container(
                 margin: const EdgeInsets.only(bottom: 10),
                 width: 200,
                 height: 200,
-                color: Colors.amber,
-              )
+                color: Colors.pink,
+              ),
+              Container(
+                margin: const EdgeInsets.only(bottom: 10),
+                width: 200,
+                height: 200,
+                color: Colors.yellow,
+              ),
+              Container(
+                margin: const EdgeInsets.only(bottom: 10),
+                width: 200,
+                height: 200,
+                color: Colors.green,
+              ),
+              Container(
+                margin: const EdgeInsets.only(bottom: 10),
+                width: 200,
+                height: 200,
+                color: Colors.black,
+              ),
             ],
           ),
         ));
